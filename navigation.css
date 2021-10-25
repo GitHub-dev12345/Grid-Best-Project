@@ -1,0 +1,118 @@
+/* Navigation Content */
+.navbar {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  height: 60px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.navbar ul li {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 20px;
+}
+
+.right {
+  display: inline-block;
+  right: 20px;
+  top: 20;
+  position: absolute;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media only screen and (max-width: 1230px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    padding: 10px;
+    line-height: 3;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .navbar ul li:hover {
+    padding: 3px 8px;
+    padding-bottom: 0px;
+  }
+
+  .dropdown .dropbtn {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .dropdown-content {
+    line-height: 1.2;
+    width: 151px;
+  }
+}
