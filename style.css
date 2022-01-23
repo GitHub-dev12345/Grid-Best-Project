@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+/* Body Design CSS Code */
 body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
-a:link,a:active,a:visited,a:hover{
-	color:#3f51b5;
-}
 
+/* OuterDiv CSS Code */
 .outerdiv
 {
 	width: 100%;
@@ -18,6 +17,8 @@ a:link,a:active,a:visited,a:hover{
     align-items: center;
     justify-content: center;
 }
+
+/* InnerDiv CSS Code */
 .innerdiv
 {
 	transform: scale(0.9);
@@ -27,6 +28,8 @@ a:link,a:active,a:visited,a:hover{
 	grid-template-rows: repeat(2,22rem);
 	grid-template-columns: repeat(4,17rem);
 }
+
+/* EachDiv CSS Code */
 .eachdiv
 {
 	padding: 1rem 2rem;
@@ -34,6 +37,8 @@ a:link,a:active,a:visited,a:hover{
     box-shadow: 5px 5px 20px #6d6b6b6b;
     color: white;
 }
+
+/* Each Div Counting CSS Code */
 .div1
 {
 	background: #733FC8;
@@ -69,10 +74,14 @@ a:link,a:active,a:visited,a:hover{
 	grid-column: 2/4;
     grid-row: 2/3;
 }
+
+/* UserDetails CSS Code */
 .userdetails
 {
 	display: flex;
 }
+
+/* ImgBox & Image CSS Code */
 .imgbox
 {
 	margin-right: 1rem;
@@ -80,9 +89,11 @@ a:link,a:active,a:visited,a:hover{
 .imgbox img
 {
 	border-radius: 50%;
-	width: 2rem;
-	border: 2px solid #cec5c5;
+	width: 2.8rem;
+	height: 2.8rem;
 }
+
+/* DetBox-CSS Code */
 .detbox
 {
 	display: flex;
@@ -114,6 +125,8 @@ a:link,a:active,a:visited,a:hover{
 {
 	color: #49505A;
 }
+
+/* Review Design CSS Code */
 .review h4
 {
 	font-size: 1.4rem;
@@ -136,44 +149,43 @@ a:link,a:active,a:visited,a:hover{
 .review.dark p{
 	color: #0e0e0e;
 }
-.attribution
-{
-	font-size: 1rem;
-    line-height: 1.5;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    text-align: right;
-}
-.attribution a
-{
-	text-decoration: none;
-}
 
+/* Footer Design CSS  Code */
 footer{
     text-align: center;
     color: white;
     background-color: black;
-    height: 6vh;
-    padding-top: 20px;
+    padding: 20px;
+	word-spacing: 5px;
+	cursor: pointer;
 }
 
-@media only screen and (max-width: 1000px)
+footer a{
+	color:red;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: yellow;
+}
+
+/* Responsive CSS Code */
+@media only screen and (max-width: 1086px)
 {
 	.innerdiv
 	{
 		transform: scale(0.7);
+		transition: 0.4s;
 	}
 }
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 850px)
 {
 	.innerdiv
 	{
 		transform: scale(0.6);
 	}
 }
-@media only screen and (max-width: 750px)
-{
+@media only screen and (max-width: 750px){
 	.div1 {
 		background-position-x: 10rem;
 	}
@@ -182,11 +194,30 @@ footer{
 		display: flex; 
 		flex-direction: column;
 		transform: scale(1);
+		transition: 0.4s;
 		margin: 2rem;
 		margin-bottom: 5rem;
 	}
-	.attribution
-	{
-		position: relative;
+
+	.review h4{
+		font-size: 1.2rem;
+		transition: 0.3s;
+	}
+
+	.review p{
+		font-size: 0.90rem;
+		transition: 0.3s;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.review h4{
+		font-size: 1rem;
+		transition: 0.3s;
+	}
+
+	.review p{
+		font-size: 0.8rem;
+		transition: 0.3s;
 	}
 }
